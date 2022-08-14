@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    background-color: rgb(184, 220, 255);
+}
+
+.container {
+    grid-area: heady;
+    text-align: center;
+font-family: 'STIX Two Text', serif;
+    font-size: 90px;
+    font-weight: 800;
+    background-color: rgb(214, 214, 214);
+    Letter-spacing: 2px;
+    max-width: 100%;
+}
+
+h2 {
+font-family: 'STIX Two Text', serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+p {
+    text-align: center;
+}
+
+nav li {
+    display:inline-block;
+    margin:15px;
+}
+
+nav a {
+    text-decoration:none;
+    color: #2F4F4F;
+    font-family:verdana,arial,sans-serif;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.flex-cont {
+    grid-area: flexy;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display:flex;
+    justify-content:center;
+    max-width: 100%;
+}
+
+.flex-cont a {
+font-family: 'STIX Two Text', serif;
+    font-size:1.4em;
+    padding: 10px 15px;
+  color: rgb(0, 48, 255);
+
+}
+
+.item {
+    padding: 1em;
+
+}
+
+.grid {
+font-family: 'STIX Two Text', serif;;
+    display: grid;
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+    grid-template-areas:
+        "heady heady heady"
+        "flexy flexy flexy"
+        "cont-1 cont-2 cont-3"
+        "cont-4 cont-5 cont-6"
+        "cont-7 cont-8 cont-9"
+        "cont-10 cont-11 cont-12"
+        "foot foot foot";
+}
+
+
+
+footer {
+    grid-area: foot;
+font-family: 'STIX Two Text', serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(86, 86, 86);
+    Letter-spacing: 2px;
+    text-align: center;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#container {
+    width: 100%;
+    background-color: rgb(214, 214, 214);
+
+}
+
+#label {
+
+    text-align: center;
+font-family: 'STIX Two Text', serif;
+    font-size: 90px;
+    font-weight: 800;
+    Letter-spacing: 2px;
+
+}
+
+#myPhoto {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 250px;
+    width: 40%;
+    margin-top: 20px;
+}
+
+#column {
+    display: inline-block;
+    width: 40%;
+    margin-top: 20px;
+}
+
+.textblocks {
+font-family: 'STIX Two Text', serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 16.5px;
+    text-align: justify;
+    vertical-align: top;
+    padding-bottom: 50px;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .grid {
+font-family: 'STIX Two Text', serif;
+        display: grid;
+        text-align: center;
+        grid-template-areas:
+                "heady"
+                "flexy"
+                "cont-1"
+                "cont-2"
+                "cont-3"
+                "cont-4"
+                "cont-5"
+                "cont-6"
+                "cont-7"
+                "cont-8"
+                "cont-9"
+                "cont-10"
+                "cont-11"
+                "cont-12"
+                "foot";
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    .flex-cont {
+        font-size: 8px;
+        font-weight: bolder;
+        max-width: 100%;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+    .container {
+        max-width: 100%;
+        font-size: 50px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .flex-cont, nav a, nav li{
+        max-width: 100%;
+    }
+    footer {
+        font-size: 15px;
+    }
+    p {
+        text-align: justify;
+    }
+
+    #column {
+        justify-content: center;
+    }
+
+    .textblocks {
+
+        max-width: 98%;
+        padding: 10px;
+    }
+    #myPhoto {
+        width: 98%;
+        padding-left: 3px;
+
+    }
+
+    #column {
+        width: 100%;
+    }
+
+}
